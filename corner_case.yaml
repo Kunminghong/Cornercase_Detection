@@ -1,0 +1,67 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO 2017 dataset https://cocodataset.org by Microsoft
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco/
+# Example usage: yolo train data=coco.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: ../ultralytics/dataset/images # dataset root dir
+# train: train
+# val: val
+
+train: /root/autodl-tmp/yolov10/ultralytics/cfg/dataset_new/images
+val: /root/autodl-tmp/yolov10/ultralytics/cfg/dataset_new/images/val
+test: /root/autodl-tmp/yolov10/ultralytics/cfg/dataset_new/images/test
+
+
+nc: 43
+
+1: pedestrian 
+2: cyclist 
+3: car 
+4: truck 
+5: tram 
+6: tricycle 
+7: bus 
+8: bicycle 
+9: moped 
+10: motorcycle 
+11: stroller 
+12: wheelchair 
+13: cart 
+14: trailer 
+15: construction_vehicle 
+16: recreational_vehicle 
+17: dog 
+18: cat 
+19: barrier 
+20: bollard 
+21: warning_sign 
+22: sentry_box 
+23: traffic_box 
+24: traffic_cone 
+25: traffic_island 
+26: traffic_light 
+27: traffic_sign 
+28: debris 
+29: suitcace 
+30: dustbin 
+31: concrete_block 
+32: machinery -
+33: chair -
+34: phone_booth 
+35: basket 
+36: cardboard 
+37: carton 
+38: garbage 
+39: garbage_bag 
+40: plastic_bag 
+41: stone 
+42: tire 
+43: misc 
+
+
+
