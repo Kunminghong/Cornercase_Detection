@@ -5,7 +5,7 @@
 **Improved YOLOv10 for Robust Object Detection in Autonomous Driving**
 
 > This repository contains the source code and trained model weights corresponding to the paper:
->  **"Corner Case Detection in Autonomous Driving with Deep Learning"**
+> **"Corner Case Detection in Autonomous Driving with Deep Learning"**
 
 ------
 
@@ -40,10 +40,11 @@ The improved model achieves better generalization and robustness while maintaini
 ```
 ├─ yolov10_improved/      # Modified model source code
 │   ├─ models/ 
-│   ├─ utils/
+│   ├─ val.py/
 │   └─ train.py
 ├─ weights/               # Trained model weights
-│   └─ best.pt
+│   ├─ last.pt/
+│  	└─ best.pt
 └─ README.md              # Project documentation (this file)
 ```
 
@@ -53,10 +54,10 @@ The improved model achieves better generalization and robustness while maintaini
 
 ```bash
 python yolov10_improved/train.py \
-    --data data.yaml \
-    --cfg yolov10_improved.yaml \
+    --data corner_case_new.yaml \
+    --cfg yolov10n-DSConv+ODConv.yaml \
     --weights '' \
-    --epochs 200 \
+    --epochs 800 \
     --img 640
 ```
 
@@ -68,4 +69,3 @@ This project is based on:
 
 - YOLOv10 official repository
 - PyTorch Deep Learning FrameworK
-
